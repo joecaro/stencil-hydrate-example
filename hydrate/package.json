@@ -1,0 +1,6 @@
+{
+  "name": "bam-scripts/hydrate",
+  "description": "BamScripts component hydration app.",
+  "main": "index.js",
+  "types": "index.d.ts"
+}
