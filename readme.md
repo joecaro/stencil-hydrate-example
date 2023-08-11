@@ -75,3 +75,8 @@ response
 	</rotating-banner>
 </bam-banner>
 ```
+
+
+## build
+
+This simulates pre rendering snippets based on the defined placement/pairings
