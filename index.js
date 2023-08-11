@@ -64,16 +64,7 @@ app.post('/hydrate', (req, res) => {
 })
 
 app.get('/hydrate', (req, res) => {
-  const doc = `
-    <html>
-      <head>
-        <title>Hydrate Test</title>
-      </head>
-      <body>
-        <bam-banner property-id="1" placement-id="265" context="context"></bam-banner>
-      </body>
-    </html>
-  `;
+  const doc = `<bam-banner property-id="1" placement-id="265" context="context"></bam-banner>`;
   renderToString(doc).then(result => {
     res.status(200).send(result.html);
   });
