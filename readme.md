@@ -1,5 +1,13 @@
 # Testing Stencil Hydrate
 
+## Hydrate
+
+the `/hydrate` dir is the direct output from Stencil. This exports a `renderToString` function that takes in string html. It will render that html, and run each component.
+
+This requires the components to have a way to run in this environment. This essentially was a flag to make the rendering async/await if on the server.
+
+The `renderToString` function also returns a whole document :/ so we need a post step to pull out the needed component and styles.
+
 ## Server
 
 `npm run start`
